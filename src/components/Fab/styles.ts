@@ -8,11 +8,10 @@ export const Container = styled.View`
 `;
 
 export const Fab = styled.View`
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: #64baeb;
   width: 40px;
   padding: 11px 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
 export const FabText = styled.Text`

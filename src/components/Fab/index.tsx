@@ -18,7 +18,7 @@ const Fabb: React.FC<{ icon: string; list: Array<MenuItem> }> = ({
     <Container>
       <FabList active={active} list={list} />
       <TouchableWithoutFeedback onPress={() => dispatch(toggleActive(active))}>
-        <Fab>
+        <Fab style={{ elevation: 3 }}>
           <FabText>C</FabText>
         </Fab>
       </TouchableWithoutFeedback>

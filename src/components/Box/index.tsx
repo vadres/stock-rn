@@ -1,5 +1,5 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React from 'react';
+import {View, Text} from 'react-native';
 
 import {
   Container,
@@ -11,18 +11,18 @@ import {
   Badge,
   Icon,
   Stock,
-  Footer
-} from "./styles";
-import { DataBox } from "../../types/DataBox";
+  Footer,
+} from './styles';
+import {DataBox} from '../../types/DataBox';
 
-const Boxx: React.FC<{ data: DataBox }> = ({ data }) => {
+const Boxx: React.FC<{data: DataBox}> = ({data}) => {
   const colors = [
-    "#00864B",
-    "#71BE45",
-    "#CBBE00",
-    "#F6A41F",
-    "#F28329",
-    "#EF3F3B"
+    '#00864B',
+    '#71BE45',
+    '#CBBE00',
+    '#F6A41F',
+    '#F28329',
+    '#EF3F3B',
   ];
 
   const percent = Math.min(
@@ -41,7 +41,7 @@ const Boxx: React.FC<{ data: DataBox }> = ({ data }) => {
             <Icon name={data.icon} />
             <Badge color={color}>{percent}%</Badge>
           </Header>
-          <View style={{ flexDirection: "row", justifyContent: "center" }}>
+          <View style={{flexDirection: 'row', justifyContent: 'center'}}>
             <Amount>{data.amount}</Amount>
             <Stock>/{data.stock}</Stock>
           </View>

@@ -14,7 +14,6 @@ export const Content = styled.View`
 
 export const Box = styled.View`
   background-color: white;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
   padding: 20px;
   border-radius: 4px;
   width: 100%;
@@ -22,8 +21,7 @@ export const Box = styled.View`
 
 export const BoxDepth = styled.View`
   justify-content: center;
-  background-color: white;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.7);
   align-items: center;
   margin-bottom: 5px;
   position: absolute;
@@ -64,11 +62,11 @@ export const Icon = styled(FaIcon)``;
 export const Amount = styled.Text`
   color: #2d3748;
   font-size: 40px;
-  line-height: 1;
 `;
 
 export const Stock = styled.Text`
   color: #ffc700;
   font-size: 15px;
   align-self: flex-end;
+  padding-bottom: 8px;
 `;
